@@ -1,20 +1,25 @@
 # seng-3000-group-project
-A group project for Software Architecture and Design
+In addition to meeting all requirements from Assignments 1 and 2, the final project must add a SPA UI (single page application) to your solution.
 
+At a minimum, your solution should include the following:
 
-The objective of this project is to design / develop an interface that assist users who have questions or issues with their vehicles . 
+  Previous requirements - 30 pts
 
-The features would include:
-    - submitting pictures of their vehicle for an estimated examination
-    - allow user to submit questions to professional technicians for recommendations on parts and services
-    - assist the user with locating parts and services
-    - allow the user to create a profile that details the car model, mileage, service history, and any additional information that can be applied
-    - manage submitted questions and response based on the user outline
-    - keep an up-to-date system to track all mechanic shops and websites that are available and if they can provide the recommended services.
+Login screen - 10 pts
+Successful login should retrieve a JWT
+5 pages/screens (not including login page) - 10 pts
+Every page must use a Web API endpoint - 10 pts
+Web API endpoint should be secured so that all valid JWT is allowed - 10 pts
+Navigation between pages - 10 pts
+Project compiles/runs - 20 pts
+Please make sure your solution has an appropriate .gitignore and all your changes have been committed.
 
+If you are using a different stack from what I have been demonstrating, then you must provide instructions on how to run your solution.  Please verify your instructions on a clean machine before submitting.
 
-A Car Parts and Service Searcher app is ideal because it allows us to create our own search engine. Involves creating a simplified UI and easy experience for users to find what they need to fix their car.
+You can zip your .git repository and give zip file the name FinalProject_GroupX.zip.
 
-The goal is to bridge the gap between the customer and qualified professional mechanics.  This will allow users to narrow potential service issues, get price quotes, and shop around for potential mechanic shops.  
+OR
 
-Our priority is to create a remarkable customer experience that puts more control into the user’s hands and to relieve some of the stress that comes from having car problems. 
+You can delete the bin and obj folders in your solution, zip your whole solution and give zip file the name FinalProject_GroupX.zip.
+
+Submit your zip file using Canvas.
