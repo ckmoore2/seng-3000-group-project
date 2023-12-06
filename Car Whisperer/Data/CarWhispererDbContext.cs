@@ -20,24 +20,6 @@ public class CarWhispererDbContext : DbContext
 
         public DbSet<Tire> Tires { get; set; } = null!;
 
-        public DbSet<Brake> Brakes { get; set; } = null!;
-
-        public DbSet<Oil> Oils { get; set; } = null!;
-
-        public DbSet<Wiper> Wipers { get; set; } = null!;
-        
-        public DbSet<Battery> Batteries { get; set; } = null!;
-
-        public DbSet<LineItem> LineItems { get; set; }
-
-        public DbSet<Order> Orders { get; set; }
-
-        public DbSet<User> Users { get; set; }
-
-        public DbSet<Role> Roles { get; set; }
-
-
-
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -68,13 +50,7 @@ public class CarWhispererDbContext : DbContext
                 new Brake { BrakeCategoryId = 5, BrakeId = 5, BrakeName = "Carquest Brake Parts Cleaner", BrakePrice = 5.99f}
             );
 
-            modelBuilder.Entity<Role>().HasData(
-                new Role{RoleId=1,RoleName="Admin"},
-                new Role{RoleId=2,RoleName="User"},
-                new Role{RoleId=3,RoleName="Manage"}
-            );
-
-
+            
 
         }
     }
