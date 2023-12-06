@@ -1,0 +1,12 @@
+@WebApiHost = https://localhost:7233
+
+GET {{WebApiHost}}/api/Tires
+
+###
+
+POST https://localhost:7233/api/Tires
+Content-Type: application/json
+
+{
+    "tireName":"Firestone"
+}
