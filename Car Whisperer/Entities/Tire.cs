@@ -18,5 +18,8 @@ public class Tire
     public string? TireName { get; set; }
     public float TirePrice { get; set; }
 
+    public virtual IEnumerable<Product> Products { get; set; }
+
+
 }
 

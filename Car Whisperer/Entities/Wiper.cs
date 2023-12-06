@@ -19,5 +19,7 @@ public class Wiper
     [MaxLength(50)]
     public string? WiperName { get; set; }
     public float WiperPrice { get; set; }
+
+    public virtual IEnumerable<Product> Products { get; set; }
         
 }

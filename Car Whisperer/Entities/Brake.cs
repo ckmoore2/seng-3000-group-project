@@ -18,5 +18,8 @@ public class Brake
     [MaxLength(50)]
     public string? BrakeName { get; set; }
     public float BrakePrice { get; set; }
+
+    public virtual IEnumerable<Product> Products { get; set; }
+
         
 }

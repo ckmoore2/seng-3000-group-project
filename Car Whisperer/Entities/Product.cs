@@ -17,5 +17,11 @@ public class Product
     [MaxLength(50)]
     public string? ProductName { get; set; }
     public float ProductPrice { get; set; }
-        
+
+    public virtual IEnumerable<Brake> Brakes { get; set; }
+    public virtual IEnumerable<Tire> Tires { get; set; }
+    public virtual IEnumerable<Oil> Oils { get; set; }
+    public virtual IEnumerable<Wiper> Wipers { get; set; }
+    
+    public virtual IEnumerable<Battery> Batteries { get; set; } 
 }

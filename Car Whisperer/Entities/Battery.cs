@@ -18,5 +18,8 @@ public class Battery
     [MaxLength(50)]
     public string? BatteryName { get; set; }
     public float BatteryPrice { get; set; }
+
+    public virtual IEnumerable<Product> Products { get; set; }
+
         
 }
