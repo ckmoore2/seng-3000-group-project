@@ -9,10 +9,13 @@ public class Product
     [Key]
 
     [MaxLength(50)]
+    public int ProductCategoryId { get; set; }
+
+    [MaxLength(50)]
     public int ProductId { get; set; }
-        
+
     [MaxLength(50)]
     public string? ProductName { get; set; }
     public float ProductPrice { get; set; }
-    public int ProductCategoryId { get; set; }
+        
 }
