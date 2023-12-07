@@ -1,12 +1,10 @@
 using Car_Whisperer.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
-using Car_Whisperer.Data;
 using Car_Whisperer.Helpers;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
-
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<CarWhispererDbContext>(options =>

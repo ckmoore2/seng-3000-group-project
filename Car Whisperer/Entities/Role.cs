@@ -1,8 +1,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-
-namespace Car_Whisperer.Entities;
+namespace Car_Whisperer;
 
 [Table("Roles")]
 public class Role
