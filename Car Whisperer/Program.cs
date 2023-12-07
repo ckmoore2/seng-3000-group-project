@@ -88,7 +88,6 @@ builder.Services.AddAuthorization(options =>
     options.AddPolicy("Authenticated", policy => policy.RequireClaim("rol", "User", "Manager", "Admin"));
 });
 
-
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -99,7 +98,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
+app.UseCors("carwhisperer-allowall");
+app.UseAuthorization();
 app.UseAuthorization();
 
 app.MapControllers();

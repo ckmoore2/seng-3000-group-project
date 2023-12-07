@@ -16,17 +16,17 @@ public class CarWhispererDbContext : DbContext
         {
         }
 
-        public DbSet<Product> Products { get; set; } 
+        public DbSet<Product> Products { get; set; } = null!; 
 
-        public DbSet<Tire> Tires { get; set; } 
+        public DbSet<Tire> Tires { get; set; } =default!; 
 
-        public DbSet<Brake> Brakes { get; set; } 
+        public DbSet<Brake> Brakes { get; set; }  = default!;
 
-        public DbSet<Battery> Batteries {get; set; }
+        public DbSet<Battery> Batteries {get; set; } = default!;
 
-        public DbSet<Oil> Oils {get; set; }
+        public DbSet<Oil> Oils {get; set; } = default!;
 
-        public DbSet<Wiper> Wipers {get; set; } 
+        public DbSet<Wiper> Wipers {get; set; } = default!; 
 
         public DbSet<Order> Orders { get; set; }
 
