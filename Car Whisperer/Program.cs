@@ -18,6 +18,14 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddSingleton<PasswordManager>();
 
+var pwdMgr = new PasswordManager();
+var results = pwdMgr.HashPassword("IcantTellU");
+Console.WriteLine("Hash below...");
+Console.WriteLine(results.hashString);
+Console.WriteLine("Salt below...");
+Console.WriteLine(results.saltString);
+Console.WriteLine();
+
 builder.Services.AddCors( policy => 
 {
         policy.AddPolicy("carwhisperer-allowall", config => 
