@@ -20,5 +20,5 @@ public class Oil
     public string? OilName { get; set; }
     public float OilPrice { get; set; }
     
-    public virtual IEnumerable<Product> Products { get; set; }
+    public virtual IEnumerable<Product>? Products { get; set; }
 }

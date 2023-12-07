@@ -16,17 +16,25 @@ public class CarWhispererDbContext : DbContext
         {
         }
 
-        public DbSet<Product> Products { get; set; } = null!;
+        public DbSet<Product> Products { get; set; } 
 
-        public DbSet<Tire> Tires { get; set; } = null!;
+        public DbSet<Tire> Tires { get; set; } 
 
-        public DbSet<Brake> Brakes { get; set; } = null!;
+        public DbSet<Brake> Brakes { get; set; } 
 
-        public DbSet<Battery> Batteries {get; set; } = null!;
+        public DbSet<Battery> Batteries {get; set; }
 
-        public DbSet<Oil> Oils {get; set; } = null!;
+        public DbSet<Oil> Oils {get; set; }
 
-        public DbSet<Wiper> Wipers {get; set; } = null!;
+        public DbSet<Wiper> Wipers {get; set; } 
+
+        public DbSet<Order> Orders { get; set; }
+
+        public DbSet<LineItem> LineItems { get; set; }
+
+        public DbSet<User> Users { get;  set; }
+
+        public DbSet<Role> Roles { get; set; }
 
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)

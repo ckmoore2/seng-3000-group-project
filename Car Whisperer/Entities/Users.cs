@@ -15,15 +15,15 @@ public class User
     [Required]
     [MaxLength(100)]
 
-    public string Email { get; set; }
+    public string? Email { get; set; }
     [Required]
     [MaxLength(50)]
 
-    public string FirstName { get; set; }
+    public string? FirstName { get; set; }
     [Required]
     [MaxLength(50)]
 
-    public string LastName { get; set; }
+    public string? LastName { get; set; }
     [JsonIgnore]
     [MaxLength(128)]
 
@@ -35,6 +35,6 @@ public class User
 
     public int RoleId { get; set; } 
 
-    public virtual Role Role { get; set; }
+    public virtual Role? Role { get; set; }
      
 }

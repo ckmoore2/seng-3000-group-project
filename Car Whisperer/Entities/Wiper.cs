@@ -20,6 +20,6 @@ public class Wiper
     public string? WiperName { get; set; }
     public float WiperPrice { get; set; }
 
-    public virtual IEnumerable<Product> Products { get; set; }
+    public virtual IEnumerable<Product>? Products { get; set; }
         
 }

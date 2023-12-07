@@ -15,5 +15,5 @@ public class Order
 
     public DateTime OrderDate { get; set; }
 
-    public virtual IEnumerable<LineItem> LineItems { get; set; }
+    public virtual IEnumerable<LineItem>? LineItems { get; set; }
 }
