@@ -1,6 +1,18 @@
 @WebApiHost = https://localhost:7233
 
+@Token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2wiOlsiQWRtaW4iXSwiZW1haWwiOiJtb29yZWN1MTdAc3R1ZGVudHMuZWN1LmVkdSIsIm5iZiI6MTY5OTQxODc4NCwiZXhwIjoxNzAyMDEwNzg0LCJpYXQiOjE2OTk0MTg3ODQsImlzcyI6Imh0dHA6Ly93d3cuZWN1LmVkdSIsImF1ZCI6Imh0dHA6Ly93d3cuZWN1LmVkdSJ9.dGulICUu26MotnUX20i9HvyLmN4MAzPusIfp5GsNrpk 
+
+POST ({{{WebApiHost}}}/api/token/authenticate
+Content-Type: application/json
+
+{
+    "email":"moorecu17@students.ecu.edu",
+    "password":"password"
+}
+
+###
 GET {{WebApiHost}}/api/Tires
+Authorization: Bearer {{Token}}
 
 ###
 
