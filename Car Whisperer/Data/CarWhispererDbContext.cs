@@ -73,16 +73,16 @@ public class CarWhispererDbContext : DbContext
                 new Oil {OilCategoryId = 2, OilId = 2, OilName = "LIQUI MOLY HighTech Full Synthetic", OilPrice = 49.99f},
                 new Oil {OilCategoryId = 3, OilId = 3, OilName = "Valvoline Advanced Full Synthetic", OilPrice = 36.99f},
                 new Oil {OilCategoryId = 4, OilId = 4, OilName = "Castrol EDGE High Mileage 5W-30 Advanced Full Synthetic", OilPrice = 40.99f},
-                new Oil {OilCategoryId = 5, OilId = 5, OilName = "FRAM Full Synthetic 5W-30", OilPrice = 29.99f},
+                new Oil {OilCategoryId = 5, OilId = 5, OilName = "FRAM Full Synthetic 5W-30", OilPrice = 29.99f}
 
             );
 
             modelBuilder.Entity<Wiper>().HasData(
-                new Wiper {WiperCategoryId = 1, WiperId = 1, WiperName = "Rain-X Silicone AdvantEdge 22in Beam", WiperPrice 39.99f},
-                new Wiper {WiperCategoryId = 2, WiperId = 2, WiperName = "PIAA Super Silicone 24in", WiperPrice 25.99f},
-                new Wiper {WiperCategoryId = 3, WiperId = 3, WiperName = "TRICO Exact Fit 22in", WiperPrice 8.99f},
-                new Wiper {WiperCategoryId = 4, WiperId = 4, WiperName = "BOSCH 22OE ICON Premium Beam", WiperPrice 25.99f},
-                new Wiper {WiperCategoryId = 5, WiperId = 5, WiperName = "Rain-X WeatherBeater 22in", WiperPrice 26.99f},
+                new Wiper {WiperCategoryId = 1, WiperId = 1, WiperName = "Rain-X Silicone AdvantEdge 22in Beam", WiperPrice = 39.99f},
+                new Wiper {WiperCategoryId = 2, WiperId = 2, WiperName = "PIAA Super Silicone 24in", WiperPrice = 25.99f},
+                new Wiper {WiperCategoryId = 3, WiperId = 3, WiperName = "TRICO Exact Fit 22in", WiperPrice = 8.99f},
+                new Wiper {WiperCategoryId = 4, WiperId = 4, WiperName = "BOSCH 22OE ICON Premium Beam", WiperPrice = 25.99f},
+                new Wiper {WiperCategoryId = 5, WiperId = 5, WiperName = "Rain-X WeatherBeater 22in", WiperPrice = 26.99f}
 
 
             );
