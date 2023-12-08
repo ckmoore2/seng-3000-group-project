@@ -107,7 +107,11 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 app.UseCors("carwhisperer-allowall");
-app.UseAuthorization();
+
+app.UseMiddleware<TestMiddleware>();
+app.UseTestMiddleware();
+
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();

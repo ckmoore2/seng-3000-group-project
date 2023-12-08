@@ -22,3 +22,7 @@ Content-Type: application/json
 {
     "tireName":"Firestone"
 }
+
+###
+
+GET https://localhost:7233/api/token/RandomRecommendation
