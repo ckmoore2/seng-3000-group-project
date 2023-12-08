@@ -5,6 +5,8 @@ using Car_Whisperer.Helpers;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
+using Car_Whisperer.Middleware;
+
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<CarWhispererDbContext>(options =>
@@ -108,8 +110,11 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 app.UseCors("carwhisperer-allowall");
 
-app.UseMiddleware<TestMiddleware>();
-app.UseTestMiddleware();
+//app.UseMiddleware<TestMiddleware>();
+app.UseTestMiddleware( new TestMiddlewareOptions{
+    LogFilename = "Test.txt"
+
+});
 
 app.UseAuthentication();
 app.UseAuthorization();

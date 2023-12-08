@@ -26,3 +26,4 @@ Content-Type: application/json
 ###
 
 GET https://localhost:7233/api/token/RandomRecommendation
+
