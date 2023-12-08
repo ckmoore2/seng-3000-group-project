@@ -92,5 +92,8 @@ namespace CarWhisperer.Controllers
         }
         [HttpGet("RandomRecommendation/{}")]
         public async Task<ActionResult<string>> RandomRecommendation();
+        {
+            return Ok(RandomRecommendation);
+        }
     }
 }
