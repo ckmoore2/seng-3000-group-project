@@ -24,7 +24,7 @@ namespace Car_Whisperer.Controllers
             _context = context;
         }
         
-        [AllowAnonymous]
+        //[AllowAnonymous]
         // GET: api/Products
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Product>>> GetProduct()
@@ -36,7 +36,7 @@ namespace Car_Whisperer.Controllers
             return await _context.Products.ToListAsync();
         }
 
-        [Authorize(Policy = "AdminOnly")]
+        //[Authorize(Policy = "AdminOnly")]
         // GET: api/Products/5
         [HttpGet("{id}")]
         public async Task<ActionResult<Product>> GetProduct(int id)

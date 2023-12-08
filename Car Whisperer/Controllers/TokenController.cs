@@ -13,6 +13,7 @@ using Car_Whisperer.Data;
 using Car_Whisperer.Helpers;
 using Car_Whisperer.Models.RequestModels;
 using Car_Whisperer.Entities;
+using Car_Whisperer.Extensions;
 
 
 
@@ -89,5 +90,7 @@ namespace CarWhisperer.Controllers
             return await Task.FromResult(token);
 
         }
+        [HttpGet("RandomRecommendation/{}")]
+        public async Task<ActionResult<string>> RandomRecommendation();
     }
 }
