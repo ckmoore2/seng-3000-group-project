@@ -91,9 +91,17 @@ namespace CarWhisperer.Controllers
 
         }
         [HttpGet("RandomRecommendation/{}")]
-        public async Task<ActionResult<string>> RandomRecommendation();
+        public async Task<ActionResult<string>> RandomRecommendation()
         {
-            return Ok(RandomRecommendation);
+            var recommendation = await GetRandomRecommendationAsync();
+            return Ok(recommendation);
+        }
+
+        private async Task<string> GetRandomRecommendationAsync()
+        {
+            // Code to get random recommendation
+            await Task.Delay(1000); // Example delay
+            return "Random Recommendation";
         }
     }
 }
