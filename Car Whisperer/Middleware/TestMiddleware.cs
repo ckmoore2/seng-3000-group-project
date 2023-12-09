@@ -22,7 +22,8 @@ public class TestMiddleware
 
         var ip =  context.Request.HttpContext.Connection.RemoteIpAddress?.ToString;
 
-        var fullFilePath = @$"*Code Location*"
+        var fullFilePath = @$"C:\\Users\\Cobbl\\Downloads\\seng-3000-group-project\\Car Whisperer\\Log\\{filename}"
+        // put your own file location in here
         //Example: C:\\Users\\Cobbl\\Downloads\\seng-3000-group-project\\Car Whisperer\\Logs\\{filename}>
 
         File.WriteAllTest(filename, $"Request IP is:{ip}" );
